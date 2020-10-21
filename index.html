@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Git Basics</title>
+		<meta name="author" content="medandlearn">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><!-- Folie 1 -->
+					<div>
+					<h1>Git Overview</h1>
+					<a href="https://www.katacoda.com/courses/git">Module zu git </a>
+					</div>
+				
+				</section>
+				<section><!-- Folie 2 -->
+					<div>
+						<h2>Git Prozess</h2>
+						<img src="images\gitstory.png" style="width:60%;}" alt="git Überblick">
+						<audio src="media/Satz1.mp3" data-autoplay></audio>
+						<!-- startet mit der 2. Folie, wenn es auch beim weiterklicken weiterlaufen soll, dann data-ignore hinzufügen.-->
+					</div>
+				</section>
+
+				<section><!-- Folie 3 -->
+					<div>
+						<h2>Anwendungsfälle für git</h2>
+						<ul>
+							<li>Codeverwaltung</li>
+							<li>gemeinsames Arbeiten an Softwareprojekten</li>
+							<li>Schreiben eines Buchs</li>
+							<li>Kollaboratives Schreiben</li>
+							<li>Blog schreiben</li>
+						</ul>
+					</div>
+				</section>
+
+				<section><!-- Folie 4 Code-Demo -->
+					<div>
+						<h2>git remote</h2>
+						<pre><code data-trim>
+$  git remote add origin https://github.com/medandlearn/how-use-git-md
+						</code>
+						</pre>
+						<p>weiteres Beispiel mit HTML</p>
+						<pre><code data-trim>
+&#x3C;section&#x3E;&#x3C;!-- Folie 2 --&#x3E;
+&#x3C;div&#x3E;
+&#x3C;h2&#x3E;Git Prozess&#x3C;/h2&#x3E;
+&#x3C;img src=&#x22;images\gitstory.png&#x22; style=&#x22;width:60%;}&#x22; alt=&#x22;git &#xDC;berblick&#x22;&#x3E;&#x9;&#x9;&#x3C;/div&#x3E;
+&#x3C;/section&#x3E;</code></pre>
+					</div>				
+					</section>
+
+				<section><!-- Folie 5 / Video -->
+					<div>
+					<h2>Git Overview</h2>
+					<video width="560" height="315" controls><source src="https://dw60dpjfwra4i.cloudfront.net/renderedVideo/784344a1-acf3-4d6c-b9c9-fe5ddf43c881.mp4" type="video/mp4">Ihr browser unterstützt das Video Tag nicht.</video>
+					</div>
+				
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
